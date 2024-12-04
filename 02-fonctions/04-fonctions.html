@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>
+    Fonctions
+</h1>
+</body>
+<script>
+
+
+/*
+04-function.html
+ 
+  une fonction est un bloc de code conçu pour effectuer une tâche spécifique. 
+Elle permet de regrouper des instructions, 
+de les réutiliser plusieurs fois et de rendre le code plus organisé et lisible.
+
+Fonction nommée : est levée (hoisted), ce qui signifie qu’elle peut être appelée même avant sa déclaration dans le code.
+
+saluer(); // Cela fonctionne car "saluer" est hoistée
+
+function saluer() {
+    console.log("Bonjour !");
+}
+
+
+Créez une fonction nommée afficherMessage qui affiche "Bienvenue dans notre programme!" dans la console à chaque fois qu'elle est appelée.
+*/ 
+
+function AfficherMessage(){
+    console.log("Bienvenue dans notre programme!");
+};
+
+AfficherMessage();
+
+/*Créez une fonction nommée multiplier qui prend deux paramètres et retourne le produit de ces deux nombres.
+*/
+
+function multiplier(a,b){
+    console.log(a*b);
+}
+
+multiplier(10,20);
+/*
+Créez une fonction nommée concatener qui prend deux chaînes de caractères en paramètres 
+et retourne la concaténation des deux avec un espace entre elles.
+*/
+
+function concatener(a,b){
+console.log(a + " "+b);
+
+}
+concatener("Bonjour","Omar");
+let coucou = "bonjour";
+let prenom = "Omar";
+concatener(coucou,prenom);
+
+
+/*
+Créez une fonction nommée convertirEnMinutes qui prend un nombre d'heures en paramètre et retourne le nombre total de minutes. 
+(Par exemple, si on passe 2, elle retourne 120).
+*/
+
+function convertirEnMinutes(heures) {
+        console.log(heures * 60);
+      }
+      convertirEnMinutes(2);
+
+</script>
+</html>

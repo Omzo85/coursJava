@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>IfElse</H1>
+</body>
+
+<script>
+
+    /*
+La structure conditionnelle la plus courante est la déclaration if. 
+Elle permet d’exécuter un bloc de code uniquement si une condition est évaluée à true.
+    if (condition) {
+        // Code exécuté si la condition est vraie
+    }
+    Si la condition est false, le code à l'intérieur des accolades {} est ignoré.
+
+if...else: On peut utiliser else pour définir un bloc de code qui s'exécute lorsque la condition est false.
+    if (condition) {
+        // Code exécuté si la condition est vraie
+    } else {
+        // Code exécuté si la condition est fausse
+    }
+
+if...else if...else: 
+On peut ajouter plusieurs conditions avec else if. 
+Si la première condition est false, le programme teste les conditions suivantes.
+    if (condition1) {
+        // Exécute ce code si condition1 est vraie
+    } else if (condition2) {
+        // Exécute ce code si condition2 est vraie
+    } else {
+        // Exécute ce code si aucune des conditions précédentes n'est vraie
+    }
+
+    */ 
+
+     /* 1)
+Demande à l’utilisateur de saisir son âge avec prompt et assigne cette valeur à une variable age.
+Utilise une condition if pour vérifier si age est supérieur ou égal à 18.
+Si la condition est remplie, affiche une alerte avec "Vous êtes majeur.".
+
+*/
+/*
+let age = prompt("Saisissez votre age");
+console.log(age);
+if(age >= 18){
+    alert("Vous etes majeur");
+}else{
+    alert("vous etes un bébé");
+}
+*/
+
+/*
+Demande à l’utilisateur de saisir un nombre avec prompt et assigne cette valeur à une variable nombre.
+Utilise if...else pour vérifier si le nombre est pair ou impair.
+Affiche une alerte avec "Le nombre est pair" ou "Le nombre est impair" en fonction du résultat.
+
+
+*/ 
+
+/*
+let nombre = Number (prompt("Veuillez entrer un nombre: "));
+
+if (Number %2){
+
+    alert("Le nombre est impair");
+}else{
+
+alert("le nombr est pair");
+}
+
+console.log(nombre);
+
+*/
+/*
+-----
+3)
+Demande à l’utilisateur de saisir deux nombres avec prompt, et assigne-les aux variables a et b.
+Utilise if...else pour afficher lequel des deux nombres est le plus grand, ou si les deux nombres sont égaux.
+Affiche le résultat avec alert.
+*/ 
+/*
+let a = prompt("Veuillez entrer un nombre: ");
+let b = prompt("Veuillez entrer un autre nombre: ");
+let resultat = Number (a)+Number(b);
+
+
+if(a < b ){
+    alert(a+" est plus petit que "+b);
+
+}else {
+
+    alert(a+" est plus grand que "+b);
+}
+
+console.log(resultat);
+
+*/
+/*
+4)
+Demande à l’utilisateur de saisir une température avec prompt et assigne-la à la variable temperature.
+Utilise une condition pour afficher :
+"Il fait froid" si la température est inférieure à 10.
+"Il fait doux" si la température est entre 10 et 25.
+"Il fait chaud" si la température est supérieure à 25.
+Affiche le résultat avec alert.
+------------
+
+*/ 
+let temperature = Number(prompt("Entrez la température :"));
+if (temperature < 10) {
+        alert("Il fait froid");
+      } else if (temperature >= 10 && temperature <= 25) {
+        alert("Il fait doux");
+      } else {
+        alert("Il fait chaud");
+      }
+
+</script>
+</html>
