@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>ACCES</H1>
+<div id="container"></div>
+
+<h1>Sélectionner un élément par son id</h1>
+    <div id="conteneur">
+      <p>Bonjour !</p>
+    </div>
+    <div class="boite">Boîte 1</div>
+    <div class="boite">Boîte 2</div>
+    <div class="boite">Boîte 3</div>
+    <p>Paragraphe 1</p>
+    <p>Paragraphe 2</p>
+    <p>Paragraphe 3</p>
+    <div class="conteneur">
+      <span>Texte à sélectionner</span>
+    </div>
+    <ul>
+      <li>Élément 1</li>
+      <li>Élément 2</li>
+      <li>Élément 3</li>
+    </ul>
+    <div class="box inactive">Boîte inactive</div>
+    <div id="supprimer">
+      <p>Texte à supprimer</p>
+    </div>
+  
+
+</body>
+
+<SCRipt>
+
+    /*
+02-accesElements.html
+  La méthode getElementById permet de sélectionner un élément par son identifiant.
+    HTML :
+        <p id="monParagraphe">Ceci est un paragraphe.</p>
+    JavaScript :	
+        const paragraphe = document.getElementById('monParagraphe');
+        console.log(paragraphe.textContent); // Résultat : "Ceci est un paragraphe."
+    ---
+    <!--1 sélectionne le div ayant l'id="conteneur". Affiche cet élément dans la console. -->
+    
+
+    
+    
+/*
+
+   const conteneur= document.getElementById ("container");
+   console.log(conteneur);
+
+   /*
+
+/*
+
+   -2 sélectionne tous les éléments ayant la classe boite et affiche-les dans la console. 
+
+
+
+const conteneur = document.getElementsByClassName("boite");
+console.log(conteneur);
+
+
+   <!--2 sélectionne tous les éléments ayant la classe boite et affiche-les dans la console. --><!--3 Sélectionne tous les éléments <p> et affiche le nobre total de <p> présents. -->m
+<!--5 sélectionne tous les <li> et affiche leur contenu un par un dans la console. -->
+<!--6 Sélectionne le div class box  et modifie sa classe pour qu’il devienne "box active". 
+   Affiche l'élément modifié dans la console. -->
+<!--7 Supprime le paragraphe <p>Texte à supprimer</p> . -->
+
+ 
+
+  const conteneur = document.getElementsByTagName("p").length;
+  console.log(conteneur);
+
+
+  <!--4 sélectionne le premier <span> et affiche son contenu texte dans la console. -->
+
+  const boite = document.querySelector(".conteneur span");
+  console.log(boite.textContent);
+
+
+  <!--5 sélectionne tous les <li> et affiche leur contenu un par un dans la console. -->
+const conteneur = document.querySelectorAll("ul li");
+
+conteneur.forEach((conteneur) =>  console.log(conteneur.textContent)) ;
+
+
+<!--6 Sélectionne le div class box  et modifie sa classe pour qu’il devienne "box active". 
+   Affiche l'élément modifié dans la console. -->
+
+
+const box = document.querySelector(".box");
+box .className = "box active";
+console.log(box);
+
+
+
+
+<!--6 Sélectionne le div class box  et modifie sa classe pour qu’il devienne "box active". 
+    Affiche l'élément modifié dans la console. -->
+
+
+     const box = document.querySelector(".box");
+  box.className = "box active";
+  console.log(box); // Résultat : <div class="box active">...</div>
+
+
+
+<!--7 Supprime le paragraphe <p>Texte à supprimer</p> . -->
+
+      */ 
+
+      const paragraphe = document.querySelector("#supprimer p");
+      paragraphe.remove();
+
+
+</SCRipt>
+</html>

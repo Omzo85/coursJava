@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1 id="titre">Style</H1>
+    <style>
+        .card {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 5px;};
+
+
+    </style>
+    <p id="texte">Lorem ipsum, dolor sit amet consectetur ad placeat dolores delectus nemo!</p>
+    <div class="card"></div>
+
+    <div id="carre" style="width: 100px; height: 100px;"></div>
+</body>
+
+<script>
+
+    /*
+03-style.html
+  Modifier les styles
+Chaque élément HTML possède une propriété style qui permet de définir ses styles 
+    element.style.propriétéCSS = valeur;
+	propriétéCSS : La propriété CSS que vous souhaitez modifier (écrite en camelCase).
+	valeur : La valeur que vous attribuez à la propriété CSS.
+
+Exemple :
+    HTML :
+        <p id="monParagraphe">Ceci est un paragraphe.</p>
+    JavaScript :
+        const paragraphe = document.getElementById('monParagraphe');
+        paragraphe.style.color = 'red'; // Change la couleur du texte
+        paragraphe.style.fontSize = '20px'; // Change la taille du texte
+
+La modification directe des styles via style peut vite devenir complexe. 
+Une meilleure pratique consiste à utiliser des classes CSS, 
+puis à les ajouter ou les retirer en JavaScript.
+    •	classList.add() : Ajoute une classe.
+    •	classList.remove() : Retire une classe.
+    •	classList.toggle() : Ajoute la classe si elle n'existe pas, la retire sinon.
+    Exemple :
+        HTML :
+            <p id="texte" class="paragraphe">Paragraphe stylisé.</p>
+            <button id="bouton">Changer le style</button>
+        
+            CSS :
+            .paragraphe {
+                color: green;
+                font-weight: bold;
+            }
+            .nouveau-style {
+                background-color: yellow;
+                font-size: 25px;
+            }
+        
+        JavaScript :
+            const paragraphe = document.getElementById('texte');
+            const bouton = document.getElementById('bouton');
+            bouton.addEventListener('click', () => {
+                paragraphe.classList.toggle('nouveau-style');
+            });
+
+
+
+
+
+
+    const paragraphe = document.getElementById('monParagraphe');
+    paragraphe.style.color = 'red'
+
+            const paragraphe = document.getElementById('titre');
+    paragraphe.style.color = 'red'
+
+
+    <!--2 Énoncé : Crée un élément <p> et augmente la taille de son texte à 24px.
+
+const texte = document.getElementById("texte");
+texte.style.fontSize = "30px";
+
+
+
+3 Crée un élément <div> et applique la classe card définie dans un fichier CSS. 
+    .card {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+
+const bloc = document.getElementById("bloc");
+bloc.classList.add("card");
+
+
+    <!-- 5 Crée un <div> carré en html css et applique un fond gris en js.
+
+*/
+
+
+const carre = document.getElementById("carre");
+carre.style.backgroundColor = "gray";
+
+
+
+            
+
+
+    
+
+
+</script>
+
+</html>

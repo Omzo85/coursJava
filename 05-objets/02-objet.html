@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Objet</H1>
+</body>
+
+<script>
+/*
+Créez un objet utilisateur avec les propriétés suivantes :
+    nom : "Alice"
+    age : 25
+    email : "alice@example.com"
+Affichez ensuite chaque propriété dans la console.
+
+*/ 
+
+/*
+À partir de l’objet utilisateur ci-dessus :
+Changez la valeur de nom pour "Bob".
+Affichez l'objet mis à jour dans la console.
+utilisateur.nom = "Bob";
+console.log(utilisateur); // { nom: "Bob", age: 25, email: "alice@example.com" }
+
+const utilisateur = {
+        nom: "Alice",
+        age: 25,
+        email: "alice@example.com"
+    };
+    console.log(utilisateur.age); 
+    console.log(utilisateur.nom); 
+    console.log(utilisateur.email); 
+
+
+    utilisateur.nom = "Omar";
+    console.log(utilisateur);
+
+
+const utilisateur = {
+        nom: "Alice",
+        age: 25,
+        email: "alice@example.com"
+    };
+
+    utilisateur.adresse = "Paris";
+
+    delete utilisateur.email;
+    console.log(utilisateur);
+
+
+
+    Créez un objet produit contenant les propriétés suivantes :
+
+nom : "Ordinateur"
+prix : 1500
+quantite : 3
+Parcourez cet objet avec une boucle for...in pour afficher chaque clé et valeur.
+
+const ordinateur = {
+    nom : "Ordinateur",
+prix : 1500,
+quantite : 3
+};
+
+
+for (const clé in ordinateur) {
+    console.log(`${clé}: ${ordinateur[clé]}`);
+}
+
+
+6)
+Créez un objet livre avec les propriétés suivantes :
+
+titre : "JavaScript pour les débutants"
+auteur : un objet avec deux propriétés :
+nom : "Jean Dupont"
+age : 45
+Affichez le nom de l’auteur et l’âge de l’auteur.
+
+
+const livre ={
+    titre : "JavaScript pour les débutants",
+auteur :{
+    Pays: "France",
+    Année: 2020
+},
+nom : "Jean Dupont",
+age : 45};
+console.log(livre.auteur);
+
+
+
+7)
+Créez un tableau nommé utilisateurs contenant trois objets représentant des personnes. Chaque objet doit avoir les propriétés :
+
+Parcourez le tableau pour afficher le nom de chaque utilisateur
+
+
+
+const utilisateurs = {
+
+    personne1 :{
+        nom : "Bob",
+        age : 10
+    },
+    personne2 :{
+        nom : "Mane",
+        age : 20
+    },
+    personne3 :{
+        nom : "Ndiaye",
+        age : 30
+    },
+
+}  ;
+
+for (const utilisateur of utilisateurs){
+    console.log(utilisateur.nom);
+}
+
+
+*/ 
+
+</script>
+</html>
