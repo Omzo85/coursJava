@@ -115,7 +115,15 @@ Cela peut être utile dans de nombreuses situations, comme lorsqu'on souhaite é
 
       
 
-
+<form id="formExemple">
+      <input type="text" placeholder="Votre nom" />
+      <button type="submit">Envoyer</button>
+    </form>
+    const formExemple = document.getElementById("formExemple");
+  formExemple.addEventListener("submit", (event) => {
+    event.preventDefault();
+    console.log("Formulaire soumis !");
+  });
 
  
 </SCript>
