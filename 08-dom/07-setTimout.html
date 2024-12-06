@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>timeout</H1>
+    <p id="conteneur"></p>
+
+
+    <div id="circle" style="width: 70px; height: 70px;background-color: red ;border-radius: 50% ; position: relative;"></div>
+
+
+    
+</body>
+
+<script>
+
+/*
+07-setTimeout.html
+
+La méthode setTimeout() permet d'exécuter une fonction ou un morceau de code après un délai spécifié en millisecondes. 
+Syntaxe : 	setTimeout(functionRef, delay, param1, param2, ...);
+		functionRef : La fonction à exécuter après le délai.
+        delay : Le délai en millisecondes avant l'exécution de la fonction.
+        param1, param2, ... : (Optionnel) Paramètres à passer à la fonction lors de son exécution.
+
+Exemple de base :
+	function saluer() {
+   		 console.log("Bonjour !");
+    }
+    setTimeout(saluer, 2000); // Affiche "Bonjour !" après 2 secondes
+
+Passer des paramètres à la fonction :
+		function saluer(nom) {
+    			console.log(`Bonjour, ${nom} !`);
+        }
+        setTimeout(saluer, 2000, "Alice"); // Affiche "Bonjour, Alice !" après 2 se-condes
+
+Annuler un setTimeout
+    La méthode setTimeout retourne un identifiant unique que vous pouvez utiliser pour annuler l'exécution planifiée en appelant clearTimeout
+    const identifiant = setTimeout(function() {
+        console.log("Ce message ne sera pas affiché.");
+    }, 5000);
+    clearTimeout(identifiant); // Annule l'exécution de la fonction
+Dans cet exemple, la fonction ne sera jamais exécutée car clearTimeout est appelé avant la fin du délai.
+*/ 
+
+/*
+
+//1 Affiche "Bonjour, monde !" dans la console après 2 secondes.
+
+
+    setTimeout(()=> {
+        console.log("Bonjour le monde");
+    },  4000);
+   // Affiche "Bonjour !" après 2 secondes
+ 
+
+ // 2  Ajoute un paragraphe avec le texte "Chargement terminé" après 3 secondes.
+
+
+ setTimeout(()=>{
+        const paragraphe = document.createElement("p");
+        paragraphe.textContent = "Chargement terminé";
+        document.getElementById("conteneur").append(paragraphe);
+      }, 3000);
+
+ // 3   Crée une fonction qui affiche un message "Bonjour, [Nom] !" avec un délai de 2 secondes.  Passe "Alice" comme paramètre
+
+ function salut (nom){
+
+    console.log("Bonjour, "+[nom]+" !");
+ }
+ 
+setTimeout(salut,2000,"Alice");
+
+//4 Planifie un message pour s'afficher après 5 secondes, mais annule l'affichage avant qu'il ne se produise. 
+const id = setTimeout(() => {
+        console.log("Ce message ne sera pas affiché.");
+      }, 5000);
+
+
+   //   5 Crée une fonction qui affiche un décompte de 5 à 0 dans la console avec une seconde d’écart. 
+
+   function decompte(n) {
+        if (n >= 0) {
+          console.log(n);
+          setTimeout(() => decompte(n - 1), 1000);
+        }
+      }
+      decompte(5);
+
+//6 Crée un cercle <div> qui change de position (de gauche à droite) après 3 secondes.
+
+    setTimeout(() => {
+        const cercle = document.getElementById("circle");
+        cercle.style.left = "50px";
+      }, 3000);
+
+      */
+</script>
+</html>

@@ -1,0 +1,26 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Animation légère pour le scroll */
+html {
+    scroll-behavior: smooth;
+}
