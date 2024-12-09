@@ -156,6 +156,18 @@ clicks.addEventListener("click", ()=> {
 
 */
 
+</SCript>
+
+<form id="formExemple">
+      <input type="text" placeholder="Votre nom" />
+      <button type="submit">Envoyer</button>
+    </form>
+<SCript>
+    const formExemple = document.getElementById("formExemple");
+  formExemple.addEventListener("submit", (event) => {
+    event.preventDefault();
+    console.log("Formulaire soumis !");
+  });
 
  
 </SCript>
